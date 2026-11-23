@@ -221,3 +221,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===== AI-rate project =====
+# 원본·정리 데이터는 올리지 않음 (스크립트로 다시 생성). 샘플만 data/sample에 커밋
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
