@@ -27,10 +27,11 @@
 - Windows + PowerShell(VS Code 터미널), Python 3. 필요한 패키지는 `requirements.txt`에 적습니다.
 - 수집 파일에는 수집 일자(collected_at, YYYY-MM-DD)를 기록합니다. 화면에 "마지막 수집 일자"를 보여 줄 때 씁니다.
 - CSV는 엑셀에서 한글이 깨지지 않도록 utf-8-sig로 저장합니다.
-- 실행: 모든 명령은 프로젝트 맨 위 폴더(AI-rate)에서 실행합니다(코드의 경로가 이 폴더 기준). 아래 순서대로 실행합니다.
-    1. python src/collect_ecos.py
-    2. python src/collect_kosis.py
-    3. python src/clean_merge.py
+- 가상환경: 처음 한 번 `python -m venv .venv` 후 `.venv\Scripts\python.exe -m pip install -r requirements.txt`
+- 실행: 모든 명령은 프로젝트 맨 위 폴더(AI-rate)에서 가상환경의 파이썬으로 실행합니다(코드의 경로가 이 폴더 기준). 아래 순서대로 실행합니다.
+    1. .venv\Scripts\python.exe src/collect_ecos.py
+    2. .venv\Scripts\python.exe src/collect_kosis.py
+    3. .venv\Scripts\python.exe src/clean_merge.py
 
 ## 작업 방식
 - 코드를 만들기 전에 계획을 설명하고 승인을 기다립니다.
